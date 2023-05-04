@@ -1,0 +1,20 @@
+---
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "NVM_VERSION=$(cat ${{ github.workspace }}/.nvmrc | xargs)" >> $GITHUB_ENV
+      - name: Use Node.js ${{ env.NVM_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NVM_VERSION }}
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.PACKAGE_TOKEN }}" >> ~/.npmrc
+      - name: publish
+        run: npm publish
