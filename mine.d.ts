@@ -1,4 +1,4 @@
-declare module "@limitlesswax/alienworlds/mine" {
+declare module "aw-mine/mine" {
     export function setPlayerData(federation_account: any, account: any, eos_api: any, tag?: string, avatar_id?: number, permission?: string): Promise<any>;
     export function setTagData(federation_account: any, account: any, eos_api: any, tag: any, permission?: string): Promise<any>;
     export function getBag(mining_account: any, account: any, eos_rpc: any, aa_api: any): Promise<any>;

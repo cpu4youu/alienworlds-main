@@ -1,6 +1,6 @@
 {
-  "name": "@limitlesswax/alienworlds",
-  "version": "0.3.0",
+  "name": "aw-mine",
+  "version": "0.1.0",
   "description": "https://alienworlds.io/ npm package",
   "main": "index.ts",
   "types": "index.d.ts",
@@ -24,18 +24,18 @@
     "lint:fix": "eslint --quiet --fix .",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "typings": "rm ./index.d.ts || true && dts-generator --project . --out index.d.ts && echo 'Please ensure the @limitlesswax/alienworlds module is the outer module in the new index.d.ts'"
+    "typings": "rm ./index.d.ts || true && dts-generator --project . --out index.d.ts && echo 'Please ensure the aw-mine module is the outer module in the new index.d.ts'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/limitlesswax/alienworlds.git"
+    "url": "git+https://github.com/cpu4youu/alienworlds-main.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/limitlesswax/alienworlds/issues"
+    "url": "https://github.com/cpu4youu/alienworlds-main/issues"
   },
-  "homepage": "https://github.com/limitlesswax/alienworlds#readme",
+  "homepage": "https://github.com/cpu4youu/alienworlds-main#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }

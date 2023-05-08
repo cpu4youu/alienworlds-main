@@ -1,5 +1,5 @@
 
-declare module "@limitlesswax/alienworlds/federation" {
+declare module "aw-mine/federation" {
     export function stake(token_account: any, federation_account: any, account: any, planet_name: any, quantity: any, eos_api: any): Promise<any>;
     export function unstake(federation_account: any, token_account: any, account: any, planet_name: any, quantity: any, eos_api: any): Promise<any>;
     export function refund(federation_account: any, account: any, refund_id: any, eos_api: any): Promise<any>;
